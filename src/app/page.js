@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <h1>Cinema Vault</h1>
-      <SearchForm>Get Movie</SearchForm>
+      <Search>Get Movie</Search>
     </div>
   );
 }
