@@ -3,7 +3,7 @@
 export default function CastInfo({ cast }) {
   return (
     <div>
-      <h1>Cast</h1>
+      {cast.length !== 0 && <h1>Cast</h1>}
       {cast.map((actor) => {
         return (
           <div key={actor.id}>

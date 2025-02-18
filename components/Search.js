@@ -22,7 +22,6 @@ export default function Search() {
     );
 
     setMovieDetails(response.data);
-    console.log(response);
 
     const movieId = response.data.results[0].id;
 
@@ -34,18 +33,9 @@ export default function Search() {
         },
       }
     );
-
-    console.log(responseCredits);
-    console.log(responseCredits.data.cast[0].name);
-
     const Cast = responseCredits.data.cast;
     const Cast10 = Cast.slice(0, 10);
     setCast10(Cast10);
-
-    console.log(Cast);
-    Cast10.map((actor) => {
-      console.log(actor.name, "-", actor.character);
-    });
   };
 
   return (
